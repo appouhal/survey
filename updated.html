@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Burt Bronx Fan Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+    }
+    hr {
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1: GENERAL AUDIENCE SURVEY ==================== -->
+<h1 style="text-align:center;">Burt Bronx Fan Survey (General Audience)</h1>
+<p style="text-align:center;">
+  Welcome! Please fill out this survey to help Burt tailor his content, schedule, and community.
+</p>
+
+<form action="#" method="POST">
+  <!-- ========== PATREON INTEREST ========== -->
+  <h2>Patreon Interest</h2>
+  <label for="q1_patreonInterest">
+    1. If Burt launched a Patreon, would you consider joining?
+  </label><br>
+  <input type="radio" id="q1_option1" name="q1_patreonInterest" value="Definitely - I'd join"> <label for="q1_option1">Definitely – I'd join</label><br>
+  <input type="radio" id="q1_option2" name="q1_patreonInterest" value="Maybe - depends on perks"> <label for="q1_option2">Maybe – depends on perks</label><br>
+  <input type="radio" id="q1_option3" name="q1_patreonInterest" value="Not sure"> <label for="q1_option3">Not sure</label><br>
+  <input type="radio" id="q1_option4" name="q1_patreonInterest" value="No - not interested"> <label for="q1_option4">No – not interested</label><br><br>
+  
+  <label for="q2_patreonPerks">
+    2. Which Patreon perks/rewards would you like most? (Select all that apply)
+  </label><br>
+  <input type="checkbox" id="q2_option1" name="q2_patreonPerks" value="Exclusive Behind-the-scenes"> <label for="q2_option1">Exclusive behind-the-scenes content</label><br>
+  <input type="checkbox" id="q2_option2" name="q2_patreonPerks" value="Personal Shout-outs"> <label for="q2_option2">Personal shout-outs / thank-you videos</label><br>
+  <input type="checkbox" id="q2_option3" name="q2_patreonPerks" value="Early Access"> <label for="q2_option3">Early access to videos/projects</label><br>
+  <input type="checkbox" id="q2_option4" name="q2_patreonPerks" value="Private Fan Community"> <label for="q2_option4">Private fan community (e.g., Discord)</label><br>
+  <input type="checkbox" id="q2_option5" name="q2_patreonPerks" value="Merch Discounts"> <label for="q2_option5">Discounts on exclusive merchandise</label><br>
+  <input type="checkbox" id="q2_option6" name="q2_patreonPerks" value="Other"> <label for="q2_option6">Other (please specify in open-ended feedback)</label><br><br>
+  
+  <label for="q3_patreonTiers">
+    3. Which monthly tier(s) would you be willing to pay for special perks?
+  </label><br>
+  <input type="checkbox" id="q3_option1" name="q3_patreonTiers" value="$5 Tier"> <label for="q3_option1">$5</label><br>
+  <input type="checkbox" id="q3_option2" name="q3_patreonTiers" value="$20 Tier"> <label for="q3_option2">$20</label><br>
+  <input type="checkbox" id="q3_option3" name="q3_patreonTiers" value="$100 Tier"> <label for="q3_option3">$100</label><br>
+  <input type="checkbox" id="q3_option4" name="q3_patreonTiers" value="$500 Tier"> <label for="q3_option4">$500</label><br><br>
+  
+  <!-- ========== LIVESTREAM PREFERENCES ========== -->
+  <h2>Livestream Preferences</h2>
+  <label for="q4_streamDays">
+    4. Which days of the week are you most likely to watch Burt’s livestreams? (Select all that apply)
+  </label><br>
+  <input type="checkbox" id="q4_day1" name="q4_streamDays" value="Monday"> <label for="q4_day1">Monday</label><br>
+  <input type="checkbox" id="q4_day2" name="q4_streamDays" value="Tuesday"> <label for="q4_day2">Tuesday</label><br>
+  <input type="checkbox" id="q4_day3" name="q4_streamDays" value="Wednesday"> <label for="q4_day3">Wednesday</label><br>
+  <input type="checkbox" id="q4_day4" name="q4_streamDays" value="Thursday"> <label for="q4_day4">Thursday</label><br>
+  <input type="checkbox" id="q4_day5" name="q4_streamDays" value="Friday"> <label for="q4_day5">Friday</label><br>
+  <input type="checkbox" id="q4_day6" name="q4_streamDays" value="Saturday"> <label for="q4_day6">Saturday</label><br>
+  <input type="checkbox" id="q4_day7" name="q4_streamDays" value="Sunday"> <label for="q4_day7">Sunday</label><br><br>
+  
+  <label for="q5_streamTimes">
+    5. Which times (EST) do you usually prefer for watching streams? (Select all that apply)
+  </label><br>
+  <input type="checkbox" id="q5_time1" name="q5_streamTimes" value="Morning 8AM-12PM"> <label for="q5_time1">Morning (8 AM – 12 PM EST)</label><br>
+  <input type="checkbox" id="q5_time2" name="q5_streamTimes" value="Afternoon 12PM-5PM"> <label for="q5_time2">Afternoon (12 PM – 5 PM EST)</label><br>
+  <input type="checkbox" id="q5_time3" name="q5_streamTimes" value="Evening 5PM-9PM"> <label for="q5_time3">Evening (5 PM – 9 PM EST)</label><br>
+  <input type="checkbox" id="q5_time4" name="q5_streamTimes" value="Late Night 9PM-1AM"> <label for="q5_time4">Late Night (9 PM – 1 AM EST)</label><br><br>
+  
+  <label for="q6_watchDuration">
+    6. On average, how long do you watch Burt’s livestreams per session?
+  </label><br>
+  <input type="radio" id="q6_option1" name="q6_watchDuration" value="Less than 30 min"> <label for="q6_option1">Less than 30 minutes</label><br>
+  <input type="radio" id="q6_option2" name="q6_watchDuration" value="30min - 1hr"> <label for="q6_option2">30 minutes – 1 hour</label><br>
+  <input type="radio" id="q6_option3" name="q6_watchDuration" value="1hr - 2hr"> <label for="q6_option3">1–2 hours</label><br>
+  <input type="radio" id="q6_option4" name="q6_watchDuration" value="2hr - 4hr"> <label for="q6_option4">2–4 hours</label><br>
+  <input type="radio" id="q6_option5" name="q6_watchDuration" value="4hr+"> <label for="q6_option5">4+ hours (often watch most/all)</label><br><br>
+  
+  <label for="q7_idealStream">
+    7. What’s your ideal stream length for Burt’s content?
+  </label><br>
+  <input type="radio" id="q7_option1" name="q7_idealStream" value="1-2 hours"> <label for="q7_option1">1–2 hours (short & frequent)</label><br>
+  <input type="radio" id="q7_option2" name="q7_idealStream" value="3-4 hours"> <label for="q7_option2">3–4 hours (medium length)</label><br>
+  <input type="radio" id="q7_option3" name="q7_idealStream" value="5-6 hours"> <label for="q7_option3">5–6 hours (longer sessions)</label><br>
+  <input type="radio" id="q7_option4" name="q7_idealStream" value="7+ hours Marathon"> <label for="q7_option4">7+ hours (marathon!)</label><br>
+  <input type="radio" id="q7_option5" name="q7_idealStream" value="No preference"> <label for="q7_option5">No preference (content is what matters)</label><br><br>
+  
+  <label for="q8_streamContent">
+    8. Which types of livestream content would you like to see more of? (Select all that apply)
+  </label><br>
+  <input type="checkbox" id="q8_option1" name="q8_streamContent" value="FishTank Reaction"> <label for="q8_option1">FishTank / Reality show reactions</label><br>
+  <input type="checkbox" id="q8_option2" name="q8_streamContent" value="Interviews Guests"> <label for="q8_option2">Interviews with guests or fans</label><br>
+  <input type="checkbox" id="q8_option3" name="q8_streamContent" value="IRL Streams"> <label for="q8_option3">IRL streams (vlogging, out-of-studio)</label><br>
+  <input type="checkbox" id="q8_option4" name="q8_streamContent" value="Comedy Sketches"> <label for="q8_option4">Comedy sketches / Character bits</label><br>
+  <input type="checkbox" id="q8_option5" name="q8_streamContent" value="Gaming Streams"> <label for="q8_option5">Gaming streams</label><br>
+  <input type="checkbox" id="q8_option6" name="q8_streamContent" value="Fitness Lifestyle"> <label for="q8_option6">Fitness / lifestyle segments</label><br>
+  <input type="checkbox" id="q8_option7" name="q8_streamContent" value="Other"> <label for="q8_option7">Other (please specify in open-ended feedback)</label><br><br>
+  
+  <!-- ========== AUDIENCE DISCOVERY & CONTENT FEEDBACK ========== -->
+  <h2>Audience Discovery & Content Feedback</h2>
+  <label for="q9_discovery">
+    9. How did you first discover Burt Bronx?
+  </label><br>
+  <input type="radio" id="q9_option1" name="q9_discovery" value="FishTank Season 3"> <label for="q9_option1">FishTank Season 3</label><br>
+  <input type="radio" id="q9_option2" name="q9_discovery" value="Social Media"> <label for="q9_option2">Social media (YouTube, TikTok, IG, etc.)</label><br>
+  <input type="radio" id="q9_option3" name="q9_discovery" value="Word of mouth"> <label for="q9_option3">Word of mouth / online forums</label><br>
+  <input type="radio" id="q9_option4" name="q9_discovery" value="Cameo"> <label for="q9_option4">Cameo</label><br>
+  <input type="radio" id="q9_option5" name="q9_discovery" value="Other"> <label for="q9_option5">Other</label><br><br>
+  
+  <label for="q10_favoriteFormat">
+    10. Which of Burt’s content formats do you enjoy most?
+  </label><br>
+  <input type="radio" id="q10_option1" name="q10_favoriteFormat" value="Long Livestreams (BurtStream)"> <label for="q10_option1">Long livestreams (BurtStream)</label><br>
+  <input type="radio" id="q10_option2" name="q10_favoriteFormat" value="Bronx Bros Co-Host"> <label for="q10_option2">Bronx Bros (co-hosted streams)</label><br>
+  <input type="radio" id="q10_option3" name="q10_favoriteFormat" value="Reaction Videos / Commentary"> <label for="q10_option3">Reaction videos / commentary clips</label><br>
+  <input type="radio" id="q10_option4" name="q10_favoriteFormat" value="Short-form"> <label for="q10_option4">Short-form social media (TikTok, IG skits)</label><br>
+  <input type="radio" id="q10_option5" name="q10_favoriteFormat" value="Personalized Content (Cameo)"> <label for="q10_option5">Personalized content (Cameo shout-outs)</label><br><br>
+  
+  <label for="q11_leastFav">
+    11. Which of Burt’s content types do you enjoy the least? (Select all that apply)
+  </label><br>
+  <input type="checkbox" id="q11_option1" name="q11_leastFav" value="FishTank Rehash"> <label for="q11_option1">Excessive FishTank rewatch/reaction</label><br>
+  <input type="checkbox" id="q11_option2" name="q11_leastFav" value="Extra-Long Chatting"> <label for="q11_option2">Very long chatting streams with no structure</label><br>
+  <input type="checkbox" id="q11_option3" name="q11_leastFav" value="Guest Interviews"> <label for="q11_option3">Guest interviews / collabs</label><br>
+  <input type="checkbox" id="q11_option4" name="q11_leastFav" value="Scripted Skits"> <label for="q11_option4">Scripted skits / comedic characters</label><br>
+  <input type="checkbox" id="q11_option5" name="q11_leastFav" value="None - I like all"> <label for="q11_option5">None – I enjoy all of it</label><br>
+  <input type="checkbox" id="q11_option6" name="q11_leastFav" value="Other"> <label for="q11_option6">Other (specify later)</label><br><br>
+  
+  <label for="q12_fishtankBalance">
+    12. Regarding FishTank content vs. new content, what do you prefer Burt to focus on?
+  </label><br>
+  <input type="radio" id="q12_option1" name="q12_fishtankBalance" value="Keep a strong FishTank focus"> <label for="q12_option1">Keep a strong FishTank focus</label><br>
+  <input type="radio" id="q12_option2" name="q12_fishtankBalance" value="Mix it up (Half & Half)"> <label for="q12_option2">Mix it up – balance FishTank & new content</label><br>
+  <input type="radio" id="q12_option3" name="q12_fishtankBalance" value="Mostly new stuff"> <label for="q12_option3">More new content, less FishTank rehash</label><br>
+  <input type="radio" id="q12_option4" name="q12_fishtankBalance" value="No strong preference"> <label for="q12_option4">No strong preference</label><br><br>
+  
+  <!-- ========== DEMOGRAPHICS ========== -->
+  <h2>Demographics</h2>
+  <label for="q13_gender">
+    13. What is your gender identity?
+  </label><br>
+  <input type="radio" id="q13_option1" name="q13_gender" value="Male"> <label for="q13_option1">Male</label><br>
+  <input type="radio" id="q13_option2" name="q13_gender" value="Female"> <label for="q13_option2">Female</label><br>
+  <input type="radio" id="q13_option3" name="q13_gender" value="Non-binary"> <label for="q13_option3">Non-binary</label><br>
+  <input type="radio" id="q13_option4" name="q13_gender" value="Prefer not to say"> <label for="q13_option4">Prefer not to say</label><br>
+  <input type="radio" id="q13_option5" name="q13_gender" value="Other"> <label for="q13_option5">Other</label><br><br>
+  
+  <label for="q14_age">
+    14. What is your age range?
+  </label><br>
+  <input type="radio" id="q14_option1" name="q14_age" value="Under 18"> <label for="q14_option1">Under 18</label><br>
+  <input type="radio" id="q14_option2" name="q14_age" value="18-24"> <label for="q14_option2">18–24</label><br>
+  <input type="radio" id="q14_option3" name="q14_age" value="25-34"> <label for="q14_option3">25–_
